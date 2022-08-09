@@ -108,3 +108,15 @@ h1 {
 .wrong #inputProgress {
   border-color: #ff2d26;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  align-self: center;
+  margin-left: 20px;
+}
+
+footer p {
+  font: 1.5em cursive;
+}
