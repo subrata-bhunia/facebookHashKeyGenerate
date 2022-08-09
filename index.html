@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function myfunction() {
+        document.getElementById('result').textContent = btoa(
+          document
+            .getElementById('hex-map')
+            .value.split(':')
+            .map(hc => String.fromCharCode(parseInt(hc, 16)))
+            .join(''),
+        );
+        console.log('sdfghjkl');
+      }
+    </script>
+  </head>
+  <body>
+    <textarea
+      id="hex-map"
+      placeholder="paste hex key map here"
+      style="width: 100%"></textarea>
+    <button id="convert" onclick="myfunction()">Convert</button>
+    <p><code id="result"></code></p>
+  </body>
+</html>
