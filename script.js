@@ -1,4 +1,4 @@
-var questions = [{ question: "Enter SH1 Key" }];
+var questions = [{ question: "Enter SHA1 Key" }];
 
 (function () {
   var tTime = 100; // transition transform time from #register in ms
